@@ -4,16 +4,7 @@
     var VERSION = "0.7.0";
     var root = this;
     var isBrowser = root.window !== undefined;
-    var doc;
-
-    // Get browser or JSDOM document
-    if (isBrowser) {
-        doc = root.document;
-    } else {
-        var jsdom = require("jsdom");
-        var dom = new jsdom.JSDOM();
-        doc = dom.window.document;
-    }
+    var doc = root.document;
 
     // Helper functions
     var ident = function (x) { return x; };
