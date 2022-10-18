@@ -3,7 +3,6 @@
 (function () {
     var VERSION = "0.7.0";
     var root = this;
-    var isBrowser = root.window !== undefined;
     var doc = root.document;
 
     // Helper functions
@@ -45,11 +44,7 @@
 
     var getSanitizer = function () {
         var lib = root.DOMPurify || (typeof require === "function" && require("dompurify"));
-        if (isBrowser) {
-            return lib && lib.sanitize;
-        } else {
-            return lib(dom.window).sanitize;
-        }
+        return lib && lib.sanitize;
     };
 
     // Set up `nb` namespace
