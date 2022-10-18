@@ -3,7 +3,7 @@
 (function () {
     var VERSION = "0.7.0";
     var root = this;
-    var doc = root.document;
+    var doc = window.document;
 
     // Helper functions
     var ident = function (x) { return x; };
