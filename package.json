@@ -1,14 +1,14 @@
 {
-    "name": "notebookjs",
-    "version": "0.7.0",
+    "name": "@determined-ai/notebook-render",
+    "version": "1.0.0",
     "description": "Parse and render Jupyter/IPython notebooks.",
     "main": "notebook.js",
-    "homepage": "https://github.com/jsvine/notebookjs",
+    "homepage": "https://github.com/mapmeld/notebookjs",
     "keywords": [
         "ipython",
         "jupyter"
     ],
-    "author": "Jeremy Singer-Vine <jsvine@gmail.com>",
+    "author": "Nick Doiron <nick.doiron@hpe.com>",
     "contributors": [],
     "license": "MIT",
     "dependencies": {
@@ -18,6 +18,6 @@
     },
     "repository": {
         "type": "git",
-        "url": "git://github.com/jsvine/notebookjs.git"
+        "url": "git://github.com/mapmeld/notebookjs.git"
     }
 }
